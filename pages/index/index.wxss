@@ -51,7 +51,7 @@
 }
 .list-hot .items .item .bottom .price {
   font-size: 36rpx;
-  color: #ed4739;
+  color: #FF831B;
   float: left;
 }
 .list-hot .items .item .bottom .price em {

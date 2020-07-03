@@ -10,7 +10,8 @@
     "pages/my/edit/edit",
     "pages/my/address/address",
     "pages/my/orderConfirm/orderConfirm",
-    "pages/my/orders/orders"
+    "pages/my/orders/orders",
+    "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",
