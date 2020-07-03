@@ -10,3 +10,5 @@
 "pages/my/orderConfirm/orderConfirm", // 确认订单
 "pages/my/orders/orders", //全部订单
 "pages/history/history" // 历史浏览
+
+pages/collect/collect  // 商品收藏

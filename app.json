@@ -11,7 +11,8 @@
     "pages/my/address/address",
     "pages/my/orderConfirm/orderConfirm",
     "pages/my/orders/orders",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/collect/collect"
   ],
   "window": {
     "backgroundTextStyle": "light",
