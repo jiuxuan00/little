@@ -1,0 +1,76 @@
+<view class="pageCart pageBg">
+    <view class="title">
+        <view class="num">购物车(97)</view>
+        <view class="edit" bindtap="tapEdit">{{editType ? '完成' : '编辑'}}</view>
+    </view>
+    <!-- //End -->
+
+    <view class="goods">
+        <view class="item">
+            <view class="radio">
+                <image src="./images/icon-radio.png" />
+                <!--<image src="./images/icon-radio-active.png" />-->
+            </view>
+            <view class="thumb">
+                <image mode="aspectFit" src="https://img14.360buyimg.com/n1/jfs/t3682/362/1363475238/559844/ab37eb62/58229915N5796455e.jpg" />
+            </view>
+            <view class="info">
+                <view class="del" bindtap="onDelGoods" data-id="1">删除</view>
+                <view class="txt">新西兰皇家红苹果6个约135g/个 90元包邮送货上门</view>
+                <view class="price">￥27.90</view>
+            </view>
+            <view class="stepper">
+                <view class="sub"><image src="./images/icon-sub.png" /></view>
+                <view class="num">
+                  <input name="name" value="1" />
+                </view>
+                <view class="add"><image src="./images/icon-add.png" /></view>
+            </view>
+            <view class="h_line"></view>
+        </view>
+        <view class="item">
+            <view class="radio">
+                <!--<image src="./images/icon-radio.png" />-->
+                <image src="./images/icon-radio-active.png" />
+            </view>
+            <view class="thumb">
+                <image mode="aspectFit" src="https://img14.360buyimg.com/n1/jfs/t3682/362/1363475238/559844/ab37eb62/58229915N5796455e.jpg" />
+            </view>
+            <view class="info">
+                <view class="del" bindtap="onDelGoods" data-id="2">删除</view>
+                <view class="txt">新西兰皇家红苹果6个约135g/个 90元包邮送货上门</view>
+                <view class="price">￥27.90</view>
+            </view>
+            <view class="stepper">
+                <view class="sub"><image src="./images/icon-sub.png" /></view>
+                <view class="num">
+                  <input name="name" value="1" />
+                </view>
+                <view class="add"><image src="./images/icon-add.png" /></view>
+            </view>
+            <view class="h_line"></view>
+        </view>
+    </view>
+    <!-- //End -->
+
+    <view class="list">
+        <view class="titleDivider">你可能还想买</view>
+         <card-item list="{{listData}}" bind:imgClick="onItemImgClick" bind:cartClick="onItemCartClick" />
+        <view class="more">点击继续加载</view>
+    </view>
+    <!-- //End -->
+
+    <view class="total">
+        <view class="radio">
+            <image src="./images/icon-radio.png" />
+            <!--<image src="./images/icon-radio-active.png" />-->
+            <text>全选</text>
+        </view>
+        <view class="info">
+            <text class="txt">合计</text>
+            <text class="price">￥94.23</text>
+            <view class="btn">{{editType ? '删除' : '结算'}}(3)</view>
+        </view>
+        <view class="h_line"></view>
+    </view>
+</view>

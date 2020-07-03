@@ -1,0 +1,38 @@
+<view class="pageMyEdit pageBg">
+    <view class="avatar">
+        <image class="img" src="https://img14.360buyimg.com/n1/jfs/t3682/362/1363475238/559844/ab37eb62/58229915N5796455e.jpg" />
+        <image class="photo" src="./images/icon-photo.png" />
+    </view>
+    <!-- //End -->
+    <view class="links">
+        <view class="link">
+            <view class="label">昵称</view>
+            <view class="ipt">
+                <input wx:if="{{showNameIpt}}" name="name" value="{{form.nameIpt}}" />
+                <view wx:else class="name">{{form.nameIpt}}</view>
+            </view>
+            <image wx:if="{{!showNameIpt}}" bindtap="onEditName" class="icon-edit" src="./images/icon-edit.png" />
+            <view class="h_line"></view>
+        </view>
+        <view class="link">
+            <view class="label">会员名</view>
+            <view class="ipt">sad大所多</view>
+            <view class="h_line"></view>
+        </view>
+        <view class="link">
+            <view class="label">注册日期</view>
+            <view class="ipt">2020年06月01日</view>
+            <view class="h_line"></view>
+        </view>
+        <view class="link">
+            <view class="label">性别</view>
+            <view class="ipt">男</view>
+            <image class="icon-edit" src="./images/icon-edit.png" />
+            <view class="h_line"></view>
+        </view>
+    </view>
+    <!-- //End -->
+    <view class="btnSave">
+        <view class="txt">保存</view>
+    </view>
+</view>

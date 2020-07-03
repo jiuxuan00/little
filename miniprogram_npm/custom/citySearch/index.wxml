@@ -1,0 +1,6 @@
+<view class="hSearch">
+    <view class="search">
+        <image class="img" src="images/search-icon.png" alt="" />
+        <input class="ipt" name="keyword" type="text" placeholder="请输入商品名称" />
+    </view>
+</view>

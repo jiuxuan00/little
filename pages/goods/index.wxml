@@ -1,0 +1,41 @@
+<view class="pageGoods pageBg">
+  <van-search value="{{ value }}" placeholder="请输入商品名称" use-action-slot shape="round" bind:change="onChange" bind:search="onSearch"></van-search>
+  <!-- //End 搜索框 -->
+  <van-tabs swipeable sticky nav-class="navClass" bind:click="onTabsClick">
+    <van-sticky offset-top="{{ 44 }}">
+      <view class="tabChild">
+        <view class="item {{tabChildIndex==0 ? 'active' : ''}}" data-id="0" bindtap="onTabChild">
+          默认
+        </view>
+        <view class="item {{tabChildIndex==1 ? 'active' : ''}}" data-id="1" bindtap="onTabChild">
+          新品
+        </view>
+        <view class="item {{tabChildIndex==2 ? 'active' : ''}}" data-id="2" bindtap="onTabChild">
+          销量
+        </view>
+        <view class="item {{tabChildIndex==3 ? 'active' : ''}} price" data-id="3" bindtap="onTabChild">
+          价格
+          <!-- 价格从高到低 -->
+          <block wx:if="{{priceSort == 0}}">
+            <image class="arrow arrowUpDefault" src="images/arrow-up-active.png" mode="scaleToFill"></image>
+            <image class="arrow arrowDownDefault" src="images/arrow-down-default.png" mode="scaleToFill"></image>
+          </block>
+          <!-- 价格从低到高 -->
+          <block wx:if="{{priceSort == 1}}">
+            <image class="arrow arrowUpDefault" src="images/arrow-up-default.png" mode="scaleToFill"></image>
+            <image class="arrow arrowDownDefault" src="images/arrow-down-active.png" mode="scaleToFill"></image>
+          </block>
+        </view>
+      </view>
+    </van-sticky>
+    <van-tab title="全部商品">
+      <card-item list="{{listData}}" bind:imgClick="onItemImgClick" bind:cartClick="onItemCartClick" />
+      <view class="more">点击继续加载</view>
+    </van-tab>
+    <van-tab title="服装鞋包">内容 2</van-tab>
+    <van-tab title="日用百货">内容 3</van-tab>
+    <van-tab title="美妆日化">内容 4</van-tab>
+    <van-tab title="家纺家饰">内容 5</van-tab>
+  </van-tabs>
+  <!-- //End nav标签 -->
+</view>
