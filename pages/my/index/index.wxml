@@ -100,7 +100,8 @@
 
     <view class="links">
         <view class="link">
-            <view class="label">在线咨询</view>
+            <!-- <view class="label">在线咨询</view> -->
+            <button class="btn">在线咨询</button>
             <view class="right"><image src="../../../images/arrow-right@2x.png"/></view>
             <view class="h_line"></view>
         </view>

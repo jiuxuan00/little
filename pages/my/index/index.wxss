@@ -229,6 +229,19 @@
   color: #333;
   float: left;
 }
+.pageMy .links .link .btn {
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 88rpx;
+  background-color: transparent;
+  padding-left: 21rpx;
+  padding-right: 0;
+  text-align: left;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.pageMy .links .link .btn::after{ border: none; }
 .pageMy .links .link .right {
   float: right;
 }
