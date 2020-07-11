@@ -12,3 +12,4 @@
 "pages/history/history" // 历史浏览
 
 pages/collect/collect  // 商品收藏
+pages/my/comment/comment  // 发表评论

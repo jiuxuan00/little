@@ -13,7 +13,8 @@
     "pages/my/orders/orders",
     "pages/history/history",
     "pages/collect/collect",
-    "pages/createAddress/createAddress"
+    "pages/createAddress/createAddress",
+    "pages/my/comment/comment"
   ],
   "window": {
     "backgroundTextStyle": "light",
