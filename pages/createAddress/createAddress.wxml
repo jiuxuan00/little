@@ -9,7 +9,7 @@
       <input class="ipt" name="tel" placeholder="请输入收货人手机号码" />
     </view>
     <view class="item">
-      <view class="label label2">点击此处选择省，市，区，镇</view>
+      <view class="label label2" bindtap="onShowCity">点击此处选择省，市，区，镇</view>
       <image class="pic" src="./images/arrow-right@2x.png"></image>
     </view>
     <view class="item">
@@ -37,4 +37,13 @@
   <view class="btm-btn">
     <view class="txt">保存并使用</view>
   </view>
+
+  <van-popup
+    show="{{ show }}"
+    position="bottom"
+    custom-style="height: 60%;"
+    bind:close="onCloseCity"
+  >
+    <van-area area-list="{{ areaList }}" title="请选择所在地区" bind:confirm="onSelectedCity" />
+  </van-popup>
 </view>
