@@ -8,10 +8,17 @@
       <view class="label">联系方式</view>
       <input class="ipt" name="tel" placeholder="请输入收货人手机号码" />
     </view>
-    <view class="item">
-      <view class="label label2" bindtap="onShowCity">点击此处选择省，市，区，镇</view>
+
+     <view class="item">
+      <view class="label">所属地区</view>
+      <input class="ipt" name="address" />
       <image class="pic" src="./images/arrow-right@2x.png"></image>
     </view>
+    <!-- <view class="item">
+      <view class="label label2" bindtap="onShowCity">所属地区</view>
+      <input name="address" value="hkhhk"/>
+      <image class="pic" src="./images/arrow-right@2x.png"></image>
+    </view> -->
     <view class="item">
       <view class="label">详细地址</view>
       <textarea class="textarea" placeholder="请输入详细地址"></textarea>
