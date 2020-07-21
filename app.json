@@ -14,7 +14,11 @@
     "pages/history/history",
     "pages/collect/collect",
     "pages/createAddress/createAddress",
-    "pages/my/comment/comment"
+    "pages/my/comment/comment",
+    "pages/my/refund/details/details",
+    "pages/my/refund/processing/processing",
+    "pages/my/refund/success/success",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

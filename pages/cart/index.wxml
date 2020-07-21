@@ -53,6 +53,13 @@
     </view>
     <!-- //End -->
 
+    <view class="nothing">
+        <image class="pic" src="./images/nothing.png"></image>
+        <view class="name">购物车竟然是空的</view>
+        <view class="txt">再忙，也要记得买点什么犒赏自己~</view>
+    </view>
+    <!-- //购物车为空 -->
+
     <view class="list">
         <view class="titleDivider">你可能还想买</view>
          <card-item list="{{listData}}" bind:imgClick="onItemImgClick" bind:cartClick="onItemCartClick" />

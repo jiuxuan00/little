@@ -1,0 +1,17 @@
+<view class="pageSearch">
+	<view class="hSearch">
+		<view class="back">
+			<image class="img" src="./images/arrow-left@2x.png" alt="" />返回</view>
+		<view class="search">
+			<image class="img" src="./images/search-icon.png" alt="" />
+			<input class="ipt" name="keyword" type="text" placeholder="请输入商品名称" />
+		</view>
+	</view>
+  <!-- //End -->
+
+  <view class="main">
+  	<image class="img" src="./images/nothing.png" alt="" />
+    <view class="txt">非常抱歉</view>
+    <view class="txt">没有找到相关的宝贝</view>
+  </view>
+</view>
