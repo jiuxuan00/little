@@ -19,7 +19,8 @@
     "pages/my/refund/processing/processing",
     "pages/my/refund/success/success",
     "pages/search/search",
-    "pages/my/refund/consult/consult"
+    "pages/my/refund/consult/consult",
+    "pages/my/refund/money/money"
   ],
   "window": {
     "backgroundTextStyle": "light",

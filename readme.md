@@ -18,6 +18,8 @@ pages/my/refund/details/details // 退款详情
 pages/my/refund/processing/processing // 退款详情-申请已提交
 pages/my/refund/success/success // 退款详情-退款成功
 pages/my/refund/consult/consult  // 协商详情
+pages/my/refund/money/money  // 钱款去向
+
 
 pages/search/search  搜索
 
